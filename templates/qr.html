@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if qr_code_base64 %}
+<img src="data:image/jpeg;base64,{{ qr_code_base64 }}" alt="QR Code">
+{% endif %}
+
+{% endblock %}

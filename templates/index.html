@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="{% url 'home' %}" method="POST">
+    {% csrf_token %}
+    <label for="name" >Enter your name<input type="text" id="name" name="text"></label>
+    <button type="submit">Generate QR</button>
+</form>
+
+
+
+
+
+{% endblock %}
